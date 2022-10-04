@@ -1,0 +1,184 @@
+:root {
+    --withe: #fff;
+    --purple: #9966CC;
+    --l-purple: #CEB0FC;
+}
+html {
+    box-sizing: border-box;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+*,*:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    padding: 0px;
+    margin: 0px;
+}
+h1,h2,h3,h4,h5 {
+    margin: 0px;
+} 
+header {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 24px;
+}
+header div{
+    width: 50%;
+}
+.logo-container img{
+    width: 52px;
+}
+.logo-container img:hover {
+    cursor: pointer;
+}
+.menu-container {
+    text-align: right;
+}
+.menu-container i {
+    font-size: 30px;
+}
+.menu-container i:hover {
+    cursor: pointer;
+}
+
+/*Off canvas menu styles*/
+.off-canvas-menu {
+    background-color: var(--withe);
+    position: fixed;
+    width: 78%;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    box-shadow: -6px 7px 9px 1px rgba(0,0,0,0.47);
+    -webkit-box-shadow: -6px 7px 9px 1px rgba(0,0,0,0.47);
+    -moz-box-shadow: -6px 7px 9px 1px rgba(0,0,0,0.47);;
+    display: none;
+    z-index: 4;
+}
+.off-canvas-menu i {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    font-size: 26px;
+}
+.off-canvas-menu i:hover {
+    cursor: pointer;
+}
+.off-canvas-menu nav {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+.off-canvas-menu nav a {
+    text-decoration: none;
+    margin-bottom: 24px;
+    color: var(--l-purple);
+    font-weight: 600;
+    border: 2px solid var(--l-purple);
+    padding: 8px;
+    border-radius: 48px;
+    transition: all .3s ease-in;
+}
+.off-canvas-menu nav a:hover {
+    color: var(--withe);
+    background-color: var(--purple);
+}
+.off-canvas-menu nav a:active {
+    color: var(--withe);
+    background-color: var(--purple);
+}
+
+/*Views styles*/
+.page-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 24px;
+}
+.page-container h1 {
+    text-align: center;
+}
+.config-buttons {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-top: 68px;
+}
+.config-buttons button {
+    margin-bottom: 24px;
+    padding: 12px;
+    border-radius: 48px;
+    color: var(--withe);
+    background-color: var(--l-purple);
+    font-weight: 600;
+    font-size: 18px;
+}
+.config-buttons button:hover{
+    background-color: var(--purple);
+}
+.config-buttons button:last-of-type {
+    margin-bottom: 0px;
+}
+main {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.controls {
+    position: relative;
+    width: 280px;
+    height: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(238, 238, 238);
+    border-radius: 428px;
+}
+#enter {
+    width: 80px;
+    height: 80px;
+    border-radius: 68px;
+    background-color: var(--l-purple);
+}
+#low-volume,
+#high-volume,
+#chanel-up,
+#chanel-down {
+    font-size: 22px;
+    background-color: var(--l-purple);
+    width: 52px;
+    height: 52px;
+    padding: 8px;
+    border-radius: 68px;
+}
+#low-volume {
+    position: absolute;
+    left: 12px;
+}
+#high-volume {
+    position: absolute;
+    right: 12px;
+}
+#chanel-down {
+    position: absolute;
+    bottom: 12px;
+}
+#chanel-up {
+    position: absolute;
+    top: 12px;
+}
+.info {
+    margin-top: 24px;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/main.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <a href="/index.html">
+                <img src="../assets/television-movie-entertainment-svgrepo-com.svg" alt="logotipo">
+            </a>
+        </div>
+        <div class="menu-container">
+            <i 
+                class="fa-solid fa-bars"
+                id="burger"
+            ></i>
+        </div>
+    </header>
+    <div
+        class="off-canvas-menu animate-animated animate-slideInRight"
+        id="off-canvas"
+    >
+        <i 
+            class="fa-solid fa-x"
+            id="close-menu"
+        ></i>
+        <nav>
+            <a href="../pages/config.html">Configuración</a>
+            <a href="../pages/app-info.html">Información de la aplicación</a>
+        </nav>
+    </div>
+    <section class="page-container">
+        <h1>Configuración</h1>
+        <div class="config-buttons">
+            <button>Conectar TV</button>
+            <button>Actualizar</button>
+        </div>
+    </section>
+    <script type="module" src="../Scripts/main.js"></script>
+</body>
+</html>
