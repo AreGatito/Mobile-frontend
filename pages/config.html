@@ -45,10 +45,23 @@
     <section class="page-container">
         <h1>Configuración</h1>
         <div class="config-buttons">
-            <button>Conectar TV</button>
-            <button>Actualizar</button>
+            <button id="connect-btn">Conectar TV</button>
+            <button id="update-btn">Actualizar</button>
+        </div>
+        <p style="margin-top: 24px;">
+            Conectado a : <span id="current-tv"></span>
+        </p>
+        <div id="form-popup">
+            <i
+                class="fa-solid fa-x"
+                id="close-pop"
+            ></i>
+            <form id="connect-form">
+                <input type="text" placeholder="Introduce el código de TV" id="tv-id">
+                <input type="submit" value="conectar">
+            </form>
         </div>
     </section>
-    <script type="module" src="../Scripts/main.js"></script>
+    <script type="module" src="../Scripts/config-page.js"></script>
 </body>
 </html>
