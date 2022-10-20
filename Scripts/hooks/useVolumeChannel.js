@@ -1,16 +1,16 @@
 export const useVolumeChannel = () => {
     let vol = {
-        value: 0 
+        value: localStorage.getItem('volume')
     }
     let cha = {
-        value:0
+        value:localStorage.getItem('channel')
     }
 
     const subirVol = () => {
         vol.value ++
     }
     const bajarVol = () => {
-        if(vol.value ===0){
+        if(vol.value <=0){
             vol.value = 0
         } else {
             vol.value--
@@ -29,11 +29,15 @@ export const useVolumeChannel = () => {
     }
 
     const updateVol = (el) => {
-        el.innerHTML =vol.value;
+        localStorage.setItem('volume',vol.value);
+        const currentVol = localStorage.getItem('volume');
+        el.innerHTML = currentVol;
     }
 
     const updateChannel = (el) => {
-        el.innerHTML = cha.value;
+        localStorage.setItem('channel',cha.value)
+        const currentChannel = localStorage.getItem('channel');
+        el.innerHTML = currentChannel;
     }
 
     return {

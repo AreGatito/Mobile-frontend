@@ -14,6 +14,7 @@ window.onload = () => {
         localStorage.setItem('connection',value);
         const currentValue = localStorage.getItem('connection');
         tvValue.innerHTML = currentValue;
+        closePop();
     }
 
     closeForm.onclick = () => {

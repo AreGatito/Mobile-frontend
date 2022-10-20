@@ -114,6 +114,7 @@ header div{
     margin-bottom: 24px;
     padding: 12px;
     border-radius: 48px;
+    border: none;
     color: var(--withe);
     background-color: var(--l-purple);
     font-weight: 600;
@@ -147,6 +148,7 @@ main {
     height: 80px;
     border-radius: 68px;
     background-color: var(--l-purple);
+    border: none;
 }
 #low-volume,
 #high-volume,
@@ -158,6 +160,7 @@ main {
     height: 52px;
     padding: 8px;
     border-radius: 68px;
+    border: none;
 }
 #low-volume {
     position: absolute;

@@ -20,8 +20,8 @@ document.addEventListener ("DOMContentLoaded", () => {
         openItem(offCanvas);
     }
 
-    volume.innerHTML = vol.value;
-    channel.innerHTML = cha.value;
+    volume.innerHTML = localStorage.getItem('volume');
+    channel.innerHTML = localStorage.getItem('channel');
 
     channelUp.onclick = () => {
         subirCanal();
@@ -39,4 +39,6 @@ document.addEventListener ("DOMContentLoaded", () => {
         bajarVol();
         updateVol(volume);
     }
+    
+    
 });
